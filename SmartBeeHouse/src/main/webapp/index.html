@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Beehouse - Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff8e1; /* light honey yellow */
+      color: #5d3a00; /* dark honey brown */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .dashboard-container {
+      text-align: center;
+      background: #fffbee;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #f5c518aa;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 70px;
+      box-shadow: 0 0 20px #f5c518aa;
+    }
+
+    h1 {
+      color: #b87e00;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 0 #fff3b0;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn-group a {
+      display: inline-block;
+      background: #f5c518;
+      color: #5d3a00;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+      box-shadow: 0 4px 0 #b87e00;
+      transition: all 0.2s ease;
+      width: 70%;
+      max-width: 300px;
+    }
+
+    .btn-group a:hover {
+      background: #d6a800;
+      color: white;
+      box-shadow: none;
+      transform: translateY(2px);
+    }
+
+    @media (max-width: 600px) {
+      .dashboard-container {
+        padding: 25px;
+      }
+
+      .btn-group a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <img src="images/a.png" alt="Smart Beehouse Logo" class="logo" />
+    <h1>Smart Beehouse Dashboard</h1>
+    <div class="btn-group">
+      <a href="dashboard">Farmer Dashboard 1</a>
+      <a href="dashboard2">Farmer Dashboard 2 (under maintenance)</a>
+      <a href="farmers">View Farmers</a>
+      <a href="beehives">View Beehives</a>
+      <a href="apiarysites">View Apiary Sites</a>
+    </div>
+  </div>
+</body>
+</html>
